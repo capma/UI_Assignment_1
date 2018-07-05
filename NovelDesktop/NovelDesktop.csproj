@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23410DEA-C3FD-49EF-AF3F-194676B68664}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NovelDesktop</RootNamespace>
+    <AssemblyName>NovelDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoubleClickButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovelDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovelDesktop.Designer.cs">
+      <DependentUpon>frmNovelDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmNovelDesktop.resx">
+      <DependentUpon>frmNovelDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-background-windows-194168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-8-start-button-icon-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\windows_8_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator_clipped_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command-prompt-glossy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc-screen.png" />
+    <None Include="Resources\Typography-512.png" />
+    <None Include="Resources\themes-icon.png" />
+    <None Include="Resources\themelanding_logo.png" />
+    <None Include="Resources\Settings-2-icon.png" />
+    <None Include="Resources\system-shutdown-icon-9301.png" />
+    <None Include="Resources\windows-7-wallpaper-1920x1200_New.jpg" />
+    <None Include="Resources\WHDQ-511784005.jpg" />
+    <None Include="Resources\volume.png" />
+    <None Include="Resources\write.png" />
+    <None Include="Resources\wmp.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\1455618412_microsoft-logo.png" />
+    <None Include="Resources\Actions-window-close-icon.png" />
+    <None Include="Resources\battery.png" />
+    <Content Include="Resources\Character-Map-Icon-sq.png" />
+    <None Include="Resources\Control-Panel-icon.png" />
+    <None Include="Resources\Cool-Blue-Glare-Dazzle-Colour-Background.jpg" />
+    <None Include="Resources\macos_sierra_2-wallpaper-1920x1200.jpg" />
+    <None Include="Resources\mspaint.png" />
+    <None Include="Resources\game_icon_png\Aliens Colonial Marines.png" />
+    <None Include="Resources\game_icon_png\Assassins Creed Revelations.png" />
+    <None Include="Resources\game_icon_png\Asuras Wrath.png" />
+    <None Include="Resources\game_icon_png\Batman Arkham City.png" />
+    <None Include="Resources\game_icon_png\Battlefield 3.png" />
+    <None Include="Resources\game_icon_png\BioShock Infinite.png" />
+    <None Include="Resources\game_icon_png\Bodycount.png" />
+    <None Include="Resources\game_icon_png\Brink.png" />
+    <None Include="Resources\Delete-Wi-Fi-Network-Profiles-W8.1-1.png" />
+    <None Include="Resources\Desktop-icon.png" />
+    <None Include="Resources\ok-icon.png" />
+    <None Include="Resources\monitor.png" />
+    <None Include="Resources\display.png" />
+    <None Include="Resources\Font_TopBar.png" />
+    <None Include="Resources\Font_Group.png" />
+    <None Include="Resources\Font_AppBar.png" />
+    <Content Include="Resources\Paint_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

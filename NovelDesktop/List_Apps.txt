@@ -1,0 +1,35 @@
+MOST USED
+--------------------------
+calc
+cmd
+notepad
+charmap
+write
+sndvol
+control
+mspaint
+
+GAMING
+--------------------------
+StikyNot
+"%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:1
+mip
+%windir%\system32\SnippingTool.exe
+%windir%\system32\mstsc.exe
+helppane.exe
+%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe
+%windir%\system32\psr.exe	Steps Recorder
+%windir%\system32\WFS.exe
+"%ProgramFiles%\Windows Journal\Journal.exe"
+"%ProgramFiles%\Windows NT\Accessories\wordpad.exe"
+%systemroot%\system32\xpsrchvw.exe
+%windir%\system32\osk.exe	Onscreen keyboard
+C:\Windows\System32\Speech\SpeechUX
+%windir%\system32\taskmgr.exe /7
+
+
+
+
+
+
+
